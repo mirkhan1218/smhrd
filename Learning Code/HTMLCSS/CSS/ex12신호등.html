@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 검정색 배경
+            > 가로 120px, 세로 360px
+        신호 동그라미
+            > 가로 100px, 세로 100px
+         */
+         #black{
+            width: 120px;
+            height: 360px;
+            background-color: black;
+
+            box-sizing: border-box;
+            border-radius: 20px;
+
+            padding: 10px;
+         }
+         .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+            box-sizing: border-box;
+         }
+         #red{
+            background-color: red;
+            margin-top: 5px;
+         }
+         #yellow{
+            background-color: yellow;
+            margin-top: 15px;
+         }
+         #green{
+            background-color: green;
+            margin-top: 15px;
+         }
+    </style>
+</head>
+<body>
+    <div id="black">
+        <div class="circle" id="red"></div>
+        <div class="circle" id="yellow"></div>
+        <div class="circle" id="green"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 랜덤한 수 하나를 뽑아준다 => 한번만 뽑아서 기준
+        let ranNum = parseInt(Math.random()*50 + 50)
+        // 몇개를 뽑을건지? *rotn
+        // 시작 숫자 + 최소 숫자
+        console.log(ranNum)
+        // 2. 사용자에게 숫자 하나를 입력받는다 => 계속해서 입력
+        while(true){
+            let inputNum = parseInt(prompt('숫자를 입력해주세요'))
+        // 3. 판단(팝업창) => 계속해서 판단 
+            if(inputNum > ranNum){
+            // 입력 > 랜덤 '입력한 숫자보다 작은 수 입니다.'
+                alert('입력한 숫자보다 작은 수 입니다.')
+            }else if(inputNum < ranNum){
+                // 입력 < 랜덤 '입력한 숫자보다 큰 수 입니다.'
+                alert('입력한 숫자보다 큰 수 입니다.')
+            }else if(inputNum = ranNum){
+                // 숫자 = 랜덤 '정답입니다. 축하합니다🎉'
+                alert('정답입니다. 축하합니다🎉')
+                // => 게임이 끝!
+                break
+            }else{
+                alert('잘못 입력하셨습니다.')
+            }
+
+        }
+    </script>
+</body>
+</html>

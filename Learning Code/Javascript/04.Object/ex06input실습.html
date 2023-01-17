@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>입력한 값을 h1태그로 출력해보기</h1>
+    <input type="text" id="txt">
+    <button id="btn">h1태그 출력</button>
+    <div id="div1"></div>
+    <script>
+        // 1. 버튼을 클릭했을 때, 이벤트 처리
+        let btn = document.getElementById('btn')
+
+        btn.addEventListener('click',()=>{
+            // 2. 사용자가 입력한 값을 가지고 올 것
+            let input = document.getElementById('txt').value
+            
+            // 3. 그 값을 비어있는 div태그 안에 작성 (h1태그)
+            //      => 대입X 누적O
+            let div = document.getElementById('div1')
+            div.innerHTML += '<h1>'+input+'<h1>'
+        })
+    </script>
+</body>
+</html>

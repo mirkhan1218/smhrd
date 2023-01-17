@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert('카카오 면접에 오신 여러분 환영합니다!')
+
+        // 1. 사용자의 이름을 입력받는다
+        let name = prompt('이름을 입력해주세요')
+        // 2. [OO님이 사용 가능한 기술을 하나씩! 기재해주세요]
+        let stec = []
+        while(true){    
+            stec.push(prompt(name+'님이 사용 가능한 기술을 하나씩! 기재해주세요'))
+            
+            // 3. [더 작성하시겠습니까?]
+            prompt('더 작성하시겠습니까?')
+            //    확인 -> 기술 기재를 반복
+            //    취소 -> 합격 여부 판단
+        }
+
+        // 4. html 과 js 가 둘 다 포함되어있다면 '합격입니다'
+        //      둘 중 하나만 포함되어있다면 '예비 인원입니다.'
+        //      둘 다 포함되어있지 않다면 '탈락입니다.'
+    </script>
+</body>
+</html>

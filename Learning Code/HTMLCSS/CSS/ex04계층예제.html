@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. div태그의 자손인 span태그의 글자 색을 tomato */
+        div span{
+            color: tomato;
+        }
+        /* 2. div태그의 자손인 li태그의 글자색을 blue */
+        div li{
+            color: blue;
+        }
+        /* 3. ol태그의 자식인 span태그를 pink */
+        ol>span{
+            color:pink;
+        }
+        /* 4. li태그의 근접 형제인 li태그를 yellowgreen */
+        li+li{
+            color:yellowgreen;
+        }
+        /* 5. 두번째 li태그의 형제인 li태그들을 orange */
+        /* Case 1 */
+        /* li:nth-child(2)~li{
+            color: orange;
+        } */
+        
+        /* Case 2 */
+        #secLi~li{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <strong>연수생 수칙</strong>
+        <ol>
+            <li>지각하지 않기</li>
+            <li id="secLi">결석하지 않기</li>
+            <span>(불가피할 땐 꼭 담당연구원에게 미리 말하기)</span>
+            <li>복습하기</li>
+        </ol>
+    </div>
+</body>
+</html>

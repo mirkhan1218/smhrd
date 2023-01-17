@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체 (Object)
+        // 여러개의 데이터를 저장 key&value 분류 저장
+
+        // 1. 객체 저장
+        let person = {
+            name : '미리칸',
+            subject : 'web',
+            intro : function(){
+                alert('hi~')
+            }
+        }
+        console.log(person)
+
+        let team = [{
+            name : '김대웅',
+            age : 30
+        },{
+            name : '미리칸',
+            age : 36
+        }]
+
+        console.log(team)
+
+        // 2. 객체 내의 데이터 접근
+        // 객체이름.key ★★★★★
+        console.log('제 이름은 ', person.name)
+
+        // 함수 형태
+        // 객체이름.key()
+        person.intro()
+
+        // 3. 객체 내의 데이터 수정
+        person.subject = 'ML'
+        console.log(person.subject)
+
+
+    </script>
+</body>
+</html>

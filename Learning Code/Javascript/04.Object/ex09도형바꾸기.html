@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #redBox{
+            background-color: red;
+        }
+        #blueBox{
+            background-color: blue;
+        }
+        #greenBox{
+            background-color: green;
+        }
+        #grayBox{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="redBox"></div>
+    <div id="blueBox"></div>
+    <div id="greenBox"></div>
+    <div id="grayBox"></div>
+    <button onclick="margin()">이동하기!</button>
+    <button onclick="radius()">둥글게!</button>
+    <script>
+        let box = document.querySelectorAll('div')
+        
+        // 1. 이동하기 버튼
+        // => 파랑색 marginLeft 100px
+        // => 초록색 200px
+        // => 회색 300px
+        const margin = ()=>{
+            for(let i = 0; i < box.length; i++){
+                box[i].style.marginLeft = (100*i)+'px'
+            }
+        }
+
+        // 2. 둥글게! 버튼
+        // 모든 도형 => border방향Radius => 50%
+        const radius = ()=>{
+            for(let i = 0; i < box.length; i++){
+                box[i].style.borderTopRightRadius ='50%'
+                box[i].style.borderBottomLeftRadius ='50%'
+            }
+        }
+    </script>
+</body>
+</html>

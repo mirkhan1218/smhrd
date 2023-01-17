@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const plus = (num1, num2)=>{return num1 + num2}
+        const minus = (num1, num2)=>{
+            let res = 0
+            num1 > num2 ? res = num1-num2 : res = num2-num1
+            return res
+        }
+        // 1. 사용자에게 첫번째 숫자를 입력받아준다
+        let inputNum1 = parseInt(prompt('첫번째 숫자를 입력하세요'))
+
+        // 2. 사용자에게 어떤 연산을 할건지 입력받아준다
+        // 어떤연산을 하시겠습니까? (+,-)
+        let op = prompt('어떤연산을 하시겠습니까? (+,-)')
+
+        // 3. 사용사에게 두번째 숫자를 입력받아준다
+        let inputNum2 = parseInt(prompt('두번째 숫자를 입력하세요'))
+        
+        // 만약 +라면 plus 함수를 실행시켜주고
+        //      -라면 minus 함수를 실행시켜줌
+        let result = 0
+        if (op == '+'){
+            result = plus(inputNum1, inputNum2)
+        }else if(op == '-'){
+            result = minus(inputNum1, inputNum2)
+        }
+
+        // 결과값을 alert로 띄워줄 것
+        if(inputNum1 >= inputNum2){
+            alert(inputNum1+' '+op+' '+inputNum2+'의 값은 '+result+'입니다')
+        }else if(inputNum2 > inputNum1){
+            alert(inputNum2+' '+op+' '+inputNum1+'의 값은 '+result+'입니다')
+        }
+    </script>
+</body>
+</html>

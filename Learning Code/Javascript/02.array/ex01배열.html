@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ** 배열 : 여러 변수를 하나의 묶음으로 다루는 것
+
+        // 1. 배열의 선언
+        let numList = []
+        let numList2 = new Array(5)
+
+        // 2. 배열 생성
+        numList = [1, '안녕', true] // 비추천 방식(오류는 없음)
+        numList2 = new Array(1,2,3,4,5)
+        console.log(numList)
+        console.log(numList2)
+
+        // 선언 + 생성
+        let numList3 = [1,2,3,4,5]
+        console.log('변화 이전', numList3)
+
+        // 3. 내가 원하는 곳에 데이터 저장
+        //  => 인덱스 활용
+        numList3[0] = 10
+        console.log('변화 이후', numList3)
+
+        // 4. 데이터에 접근
+        //  => 인덱스 활용
+        console.log('numList3의 4번째 인덱스 값은?', numList3[3])
+
+        for(let i = 0; i < numList3.length; i++){
+            console.log(numList3[i])
+        }
+    </script>
+</body>
+</html>

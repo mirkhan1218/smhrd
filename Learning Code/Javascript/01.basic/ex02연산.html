@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 10console.log(String(3))
+
+        // 형변환
+        // 1. 문자 => 숫자 : Number
+        // 2. 문자 or 숫자 => 정수 : parseInt
+        // 3. 숫자 => 문자 : String
+        // let num = parseInt(prompt('숫자를 입력하세요'))
+        // console.log(num+num)
+
+        // 1. 사용자에게 첫번째 숫자를 입력 받으시오.
+        let num1 = parseInt(prompt('첫번째 숫자를 입력하세요'))
+        // 2. 사용자에게 두번째 숫자를 입력 받으시오.
+        let num2 = parseInt(prompt('두번째 숫자를 입력하세요'))
+        // 3. console창에 10과 10을 더한 값은 20입니다. 를 출력
+        console.log(num1 + '과 ' + num2 + '을 더한 값은 ' + (num1+num2) + '입니다')
+
+        // ** 연산자
+        // (1) '/' 실제 나누기 연산 결과
+        //     '%' 나누고 난 나머지
+        console.log(100/3) // 33.3333333
+        console.log(100%3) // 1
+
+        // (2) == 비교연산자
+        console.log('3' == 3)
+        //     === 일치연산자 : 값, 자료형이 전부 일치
+
+        // (3) 삼항연산자
+        // 조건문 ? true 일때 선택문 : false 일때 선택문
+        let a = 10, b = 20
+        let res = a>b ? 'a가 더 크다' : 'b가 더 크다'
+        console.log(res)
+    </script>
+</body>
+</html>

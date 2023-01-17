@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.board.dao.BoardMapper">
+
+	<select id="allList" resultType="kr.board.dao.BoardVO">
+		select * from myboard order by idx desc
+	</select>
+
+	<insert id="boardInsert" parameterType="kr.board.dao.BoardVO">
+		insert into myboard(idx, memId, title, content, writer) values(idx_seq.nextval,#{memId}, #{title}, #{content},#{writer})
+	</insert>
+
+	<select id="getByIdx" parameterType="int"
+		resultType="kr.board.dao.BoardVO">
+		select * from myboard where idx=#{idx}
+	</select>
+
+	<update id="countUpdate">
+		update myboard set count=count+1 where idx=#{idx}
+	</update>
+
+	<delete id="boardDelete">
+		delete from myboard where idx = #{idx}
+	</delete>
+
+	<update id="boardUpdate" parameterType="kr.board.dao.BoardVO">
+		update myboard set title=#{title}, content=#{content} where idx=#{idx}
+	</update>
+
+	<select id="memberLogin" parameterType="kr.board.dao.MemberVO" resultType="kr.board.dao.MemberVO">
+		select * from memtbl where memId=#{memId} and memPwd=#{memPwd}
+	</select>
+</mapper>

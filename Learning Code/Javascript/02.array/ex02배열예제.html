@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 1부터 8까지의 숫자가 담겨있는 배열 list 선언 & 생성
+        let list = [1,2,3,4,5,6,7,8]
+        // 1-1) 홀수만 따로 넣어줄 수 있는 배열
+        let oddList = []
+        // 1-2) 홀수의 개수
+        let cnt = 0
+
+        // 2. 배열 안에 있는 데이터가 짝수인지 홀수인지 판단
+        // 2-1) 나머지 연산자를 이용
+        for(let i = 0; i < list.length; i++){
+            if(list[i]%2 != 0){
+                // Case1 알고리즘 이용
+                // oddList[cnt] = list[i]
+                // cnt++
+
+                // Case2 배열함수 이용 (cnt 없이)
+                oddList.push(list[i])
+            }
+        }
+
+        // 3. alert창으로 "list에 들어있는 홀수는 1,3,5,7이며 총 4개 입니다" 출력
+        alert('list 들어있는 홀수는 ' + oddList + ' 이며 총 ' + oddList.length + '개 입니다')
+    </script>
+</body>
+</html>

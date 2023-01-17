@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+</head>
+<body>
+    <button id="btn1">요청</button>
+    <div id="movieList"></div>
+
+    <script>
+        let rank = 10
+        $('#btn1').click(()=>{
+            $.ajax({
+                url : 'https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=83664b46ed57d387b38dd67d6728ec9a&targetDt=20220901',
+                type : 'get',
+                // data : (내가 넘길 정보),
+                success : (res)=>{
+                    // for(let i=0; i<10; i++){
+                    //    let rank =  res.boxOfficeResult.weeklyBoxOfficeList[i]
+                    //    console.log(rank.rank+'위'+' - '+rank.movieNm+' - '+rank.openDt)
+                    // }
+
+                    // console.log(res.boxOfficeResult.weeklyBoxOfficeList[0])
+
+                    // 단, 1/2 모두 1위부터 10위까지
+                    // 1. 영화 데이터의 순위, 영화 제목, 개봉일자를 
+                    // 차례로 console창에 출력
+                    // 1 - 탑건 - 20220618
+
+                    // 2. 가지고 온 데이터의 순위, 영화제목, 개봉일자를
+                    //      div안에 표로 출력
+                    let code = '<table><tr>'
+                        code += '<th>순위</th>'
+                        code += '<th>영화 제목</th>'
+                        code += '<th>개봉일자</th></tr>'
+                        
+                    res.boxOfficeResult.weeklyBoxOfficeList.forEach((item)=>{
+                        console.log(item.rank)
+                        console.log(item.movieNm)
+                        console.log(item.openDt)
+                            
+                        code += '<tr>'
+                            code += `<td>${item.rank}</td>`
+                            code += `<td>${item.movieNm}</td>`
+                            code += `<td>${item.openDt}</td>`
+                        code += '</tr>'             
+                    })
+                    code += '</table>'
+
+                    $('#movieList').html(code)
+                },
+                error : ()=>{
+                    alert('error~!')
+                }
+            })
+        })
+    </script>
+</body>
+</html>

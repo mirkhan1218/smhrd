@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ex1018</string>
+    <string-array name="listCon">
+        <item>1. Android 짱 재미있음</item>
+        <item>2. 오후 시간이라서 졸려요 ㅠㅠ</item>
+        <item>3. 잘하고 싶어요</item>
+        <item>4. 맥 들고 스타벅스 가면 완전 있어보이겠다.</item>
+    </string-array>
+</resources>

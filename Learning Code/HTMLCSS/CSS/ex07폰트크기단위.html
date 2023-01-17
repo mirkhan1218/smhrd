@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #span1{
+            font-size:10px;
+        }
+
+        p{
+            font-size:10px;
+        }
+
+        #span2{
+            /* em : 부모 요소 크기에 따른 배수단위 */
+            font-size:2.5em;
+        }
+
+        #span3{
+            /* rem : html 문서의 폰트 크기에 따른 배수단위 */
+            font-size:2.5rem;
+        }
+
+        /* 
+        view size
+        내가 보는 전체 넓이 : vw
+        내가 보는 전체 높이 : vh
+        */
+
+        div{
+            background: red;
+            width:100vw;
+            height:50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <!-- span#span1 -->
+    <span id="span1">px로 조정</span>
+
+    <!-- p>span#span2 -->
+    <p>
+        <span id="span2">em으로 조정</span>
+    </p>
+
+    <!-- span#span3 -->
+    <span id="span3">rem으로 조정</span>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. table : 테이블을 만들겠다! -->
+    <table border="1px solid black" width="500px" align="center">
+        <!-- 2. caption : 표의 제목 -->
+        <caption>메뉴판</caption>
+
+        <!-- 3. table row : 테이블의 1줄 생성 -->
+        <tr bgcolor="lightblue" height="50px">
+            <!-- 4. table header 표의 컬럼헤더 생성 -->
+            <!-- column (열) 병합 : colspan -->
+            <th colspan="2">메뉴 및 가격</th>
+        </tr>
+
+        <tr align="center">
+            <td>아메리카노</td>
+            <td>3500</td>
+        </tr>
+
+        <tr align="center">
+            <td>카페라떼</td>
+            <!-- row (행) 병합 : rowspan -->
+            <td rowspan="2">4000</td>
+        </tr>
+
+        <tr align="center">
+            <td>민트초코</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Get방식</h1>
+	<!-- 1. url에 얹어서 데이터를 전송 -> 보안에 취약
+	 2. 데이터 길이에 제한(1024byte)
+	 3. post 방식보다 빠르다. 임시저장소(캐시)에 저장하기 때문에 로딩속도가 빠르다.
+	 4. method를 따로 지정하지 않으면 get이 기본값
+	-->
+	<form action="Ex08_getPost" method="get">
+		<input type="text" name="data"> <input type="submit">
+	</form>
+
+	<h1> Post방식 </h1>
+	<!-- 1. 패킷의 body에 담아서 데이터를 전송 -> 보안에 강력
+		 2. 데이터 길이에 제한 x
+		 3. Content-Tyep을 명시해야함.
+			3-1. Application/x-www-form-urlencoded : 기본값(Key=value)
+			3-2. text/plain : 단순 text 형태로 데이터를 전송
+			3-3. multipart/form-data : 파일 전송시 사용
+		 4. method를 post로 지정해줘야 함.
+	 -->
+	<form action="Ex08_getPost" method="post" enctype="application/x-www-form-urlencoded">
+		<input type="text" name="data"> <input type="submit">
+	</form>
+</body>
+</html>

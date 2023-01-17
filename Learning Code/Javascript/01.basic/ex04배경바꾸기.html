@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 사용자에게 원하는 색상을 입력 받는다
+        // '색깔을 적어주세요! (빨강, 초록, 파랑)'
+        let color_temp = prompt('색깔을 적어주세요! (빨강, 초록, 파랑)')
+
+        // 2. 빨강 => console창에 '빨강입니다'
+        //    초록 => '초록입니다' 파랑 => '파랑입니다'
+        //  => '잘못 입력하셨습니다'
+        if (color_temp === '빨강'){
+            console.log('빨강 입니다.')
+            document.getElementsByTagName('body')[0].style.background = 'red'
+        } else if (color_temp === '초록'){
+            console.log('초록 입니다.')
+            document.getElementsByTagName('body')[0].style.background = 'green'
+        } else if (color_temp === '파랑'){
+            console.log('파랑 입니다.')
+            document.getElementsByTagName('body')[0].style.background = 'blue'
+        } else {
+            alert('잘못 입력하셨습니다')
+        }
+    </script>
+</body>
+</html>

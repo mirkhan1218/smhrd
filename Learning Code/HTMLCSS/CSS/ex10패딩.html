@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+
+            margin: 0px;
+            padding: 0px;
+        }
+        #yellow{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+            padding: 20px;
+
+            /* 테두리를 둥글게 만들어주는 속성
+                border-radius => 네 모서리가 전부 적용
+                * 한 모서리만 둥글게 해주고 싶을떄는?
+                border-위or아래-좌or우-radius
+
+                * 위쪽 오른쪽에 있는 모서리를 50% 둥글게
+             */
+
+             border-top-right-radius: 20px;
+             /* border-radius: 50%; */
+        }
+    </style>
+</head>
+<body>
+    <div id="yellow">내용(Content)</div>
+</body>
+</html>

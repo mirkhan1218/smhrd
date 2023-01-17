@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ** 함수
+        // 1. 중복되는 코드 최소화
+        // 2. 실행코드를 묶어서 사용 가능
+        // => 재사용성
+
+        // 1. 함수 선언
+        function hello(){
+            console.log('hello world!')
+        }
+        // () : 어떤 값을 전달 받아 올건지 인자를 정의하는 부분
+        // {} : 실제로 함수 안에서 동작할 코드 작성 부분
+
+        // 2. 함수 호출
+        hello()
+        
+        function addNum(num1, num2){
+            // ** 매개변수를 통한 기능 출력함수
+            // console.log('addNum의 결과는 ', (num1 + num2))
+
+            // ** 매개변수를 통한 리턴함수
+            return num1 + num2
+        }
+        let addResult = addNum(2, 3)
+        console.log('addNum의 결과는 ', addResult)
+
+        // 두 값을 받아서 뺴주는 minusNum이라는 함수를 생성
+        function minusNum(num1, num2){
+            let res = 0
+            if (num1 > num2){
+                res = num1 - num2
+            }else{
+                // 단, num2가 더 크다면 num2-num1
+                res = num2 - num1
+            }
+            return res
+        }
+        let minusRes = minusNum(6,10)
+        // console 출력 >minusNum의 결과는 3입니다.
+        console.log('minusNum의 결과는 ' + minusRes + ' 입니다')
+
+        // ** 함수 표현식 => 화살표 함수
+        // const bye = function(){
+        //     console.log('bye')
+        // }
+        const bye = ()=>{
+            console.log('bye')
+        }
+        bye()
+
+        // 종류
+        // (1) 함수선언식
+        function 함수이름 (매개변수){
+            return 매개변수
+        }
+
+        // (2) 함수표현식
+        const 함수이름2 = (매개변수)=>{
+            return 매개변수
+        }
+
+    </script>
+</body>
+</html>

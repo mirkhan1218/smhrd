@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ex1017</string>
+    <string-array name="color_list">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+</resources>

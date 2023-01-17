@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let list=[1,2,3]
+        console.log('list의 첫번째 모습',list)
+        
+        // 1. 배열의 맨 마지막 인덱스에 데이터 넣기 : push()
+        list.push('미리칸')
+        console.log('push',list)
+        
+        // 2. 배열의 맨 마지막 인덱스 데이터 삭제 : pop()
+        list.pop()
+        console.log('pop',list)
+        
+        // 3. 배열의 맨 앞 인덱스에 데이터 넣기 : unshift()
+        list.unshift('임보미')
+        console.log('unshift',list)
+
+        // 4. 배열의 맨 앞 인덱스 데이터 삭제 : shift()
+        list.shift()
+        console.log('shift',list)
+
+        // 5. 원하는 위치에 데이터 추가 or 삭제 : splice()
+        // (1) 추가 : splice(원하는 인덱스,0,추가할 데이터)
+        list.splice(2,0,'순두부찌개')
+        console.log('splice-1',list)
+        
+        // (2) 삭제 : splice(원하는 인덱스,삭제하기를 원하는 개수)
+        // list.splice(1,2)
+        // console.log('splice-2',list)
+
+        // 6. at()
+        list.at(1)
+        console.log('at',list.at(-2))
+
+        // 7. forEach
+        // 배열 + for문 => 배열 내의 데이터를 한꺼번에 꺼내오고싶을때
+
+        // 배열이름.forEach((아이템,인덱스)=>{})
+        let twice = ['나연', '사나', '쯔위']
+        twice.forEach((item, index) => {
+            console.log(item, index)});
+
+        // 8. 검색
+        let team = ['김현성','김대웅','김소정','김호전','노건희','미리칸']
+
+        // (1) 내용이 포함되어있는지 여부 알기 includes
+        console.log('팀에 미리칸 있니?', team.includes('미리칸'))
+
+        // (2) 내용이 포함되어있는 인덱스 찾기 indexOf
+        console.log('미리칸 어디있어?', team.indexOf('미리칸'))
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <button id="btn">클릭</button>
+    <script>
+        let btn = document.getElementById('btn')
+        btn.onclick = ()=>{
+            console.log('ck')
+            let input = document.getElementById('txt')
+            console.log(input.value)
+        }
+
+        btn.onclick = ()=>{
+            alert('반가워요')
+        }
+
+        // btn.addEventListener('내가 감지할 이벤트',이벤트가 감지되었을때 실행할 함수)
+        btn.addEventListener('click',()=>{
+            alert('addEventListener 1')
+        })
+        btn.addEventListener('click',()=>{
+            alert('addEventListener 2')
+        })
+    </script>
+</body>
+</html>

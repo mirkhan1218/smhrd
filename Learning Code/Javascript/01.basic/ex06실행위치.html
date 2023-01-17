@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 외부의 js 파일과 연결하는 작업이 필요하다 -->
+    <script src="./ex06외부.js"></script>
+</head>
+<body>
+    <!--
+        1. 내부 방식
+        <head> 혹은 <body> 영역 안에 <script> 태그를 작성해서
+        그안에 js 문법 작성
+     -->
+     <script>
+        console.log('내부 방식')
+    </script>
+
+    <!-- 
+        2. 인라인 방식
+        태그에 직접 기능을 넣어줄 떄 작성
+     -->
+     <button onmouseenter="console.log('마우스!')">마우스 올리기</button>
+
+    <!-- 
+        3. 외부 방식
+     -->
+     <button onclick="ck()">마우스 클릭!</button>
+</body>
+</html>

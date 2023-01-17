@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 자식 선택자 : >
+        기준선택자>대상선택자{선언}
+         */
+        ul>li{
+            color:blue;
+        }
+
+        /* 2. 자손 선택자 : 띄어쓰기
+        기준선택자 대상선택자{선언}
+        */
+        body span{
+            color:red;
+        }
+
+        /* 3. 근접 후행 선택자 : +
+        - 같은 부모 + 기준, 대상이 바로 옆에
+        */
+        li+span{
+            background-color: black;
+        }
+
+        /* 4. 후행 선택자 : ~
+        - 같은 부모 + 기준보다 뒤에 있는 요소
+        */
+        span~li{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>A</li>
+        <span>뿅~!!</span>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <ol>
+        <li>A</li>
+        <span>뿅~!!</span>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+</body>
+</html>

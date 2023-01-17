@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1. 파일 다운로드 -->
+    <!-- <script src="./js/jquery-3.6.1.min.js"></script> -->
+    <!-- 2. CDN 다운로드 -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+</head>
+<body>
+
+    <p>안녕하세요</p>
+    <button id="btn1">click</button>
+
+    <br></br>
+    <input type="text" id="txt">
+    <button id="btn2">input btn</button>
+    <div id="textList"></div>
+
+    <script>
+        // 1. btn1 이 아이디인 btn을 클릭시, => 안녕히가세요
+        // 1-1) 안에 있는 내용만 : text()
+        $('#btn1').click(()=>{
+            console.log('ck')
+            // $('p').text('안녕히가세요')
+
+            // 1-2) 태그 포함 : html()
+            $('p').html('<h1>안녕히가세요</h1>')
+
+            // 3. jQuery 에서 style 변경
+            // .css(속성이름, 바꿀속성값)
+            $('p').css('color','salmon')
+        })
+        // document.getElementById('btn1').addEventListener('click',()=>{
+        //     document.getElementsByTagName('p')[0].innerText = '안녕히가세요'
+        // })
+
+        // 2. btn2 가 아이디인 버튼 클릭시, div에 글자가 나타나게
+        $('#btn2').click(()=>{
+            let text = $('#txt').val()
+            console.log(text)
+
+            // $('#textList').html(`<p>${text}</p>`)
+
+            // 2-1) 요소 내부 뒤쪽 누적 : append()
+            // $('#textList').append(`<p>${text}</p>`)
+
+            // 2-2) 요소 내부 앞쪽 누적 : prepend()
+            // $('#textList').prepend(`<p>${text}</>`)
+
+            $('#textList').html(`<button id="newBtn">새로운 버튼</button>`)
+        })
+
+        // $('#newBtn').click(()=>{
+        //     console.log('new Btn Click')
+        // })
+
+        // 동적 이벤트 바인딩
+
+        // .click : 최초 페이지 로딩시, 선언되어있던 요소들이 대상
+        //          => 더이상 동적으로 바인딩 X
+
+        // .on('click',대상,()=>{}) : 동적으로 추가되거나, 변화된 요소에 이벤트를 추가할 때 사용
+        $(document).on('click','#newBtn',()=>{
+            console.log('new Btn Click')
+        })
+    </script>
+</body>
+</html>

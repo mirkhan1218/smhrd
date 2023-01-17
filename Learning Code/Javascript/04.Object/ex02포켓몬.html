@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 참고!
+        // 배열 -> 02.array ex01배열.html
+        // 객체 -> 04.Object ex01객체생성.html
+
+        // 1. pokemon 이라는 배열 생성
+        let pokemon = []
+        // 2. 0번째 인덱스에는 객체
+        //      => name : 피카츄, age : 2, skill : console> 백만볼트!
+        pokemon.push({name : '피카츄', age : 2, skill : function(){console.log('백만볼트!')}})
+        // 3. 1번째 인덱스에는 객체
+        //      => name : 꼬북이, age : 1, skill : console> 물대포!
+        pokemon.push({name : '꼬북이', age : 1, skill : function(){console.log('물대포!')}})
+
+        // 결과 --
+        // 제 피카츄는 2살입니다. => alert
+        // alert('제 '+pokemon[0].name+'는 '+pokemon[0].age+'살 입니다')
+        // 단 작은따옴표 ('')가 아닌 백틱 (``) 사용
+        alert(`제 ${pokemon[0].name}는 ${pokemon[0].age}살 입니다.`)
+        // 제 꼬북이는 1살이에요. => alert
+        // alert('제 '+pokemon[1].name+'는 '+pokemon[1].age+'살 입니다')
+        alert(`제 ${pokemon[1].name}는 ${pokemon[1].age}살 입니다.`)
+
+        // console
+        // 백만볼트!
+        pokemon[0].skill()
+        // 물대포!
+        pokemon[1].skill()
+    </script>
+</body>
+</html>

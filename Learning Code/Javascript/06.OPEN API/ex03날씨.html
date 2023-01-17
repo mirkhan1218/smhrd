@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div>현재 내 위치의 날씨는?</div>
+    <button id="btnWeather">날씨 가져오기</button>
+    <div id="weatherBox"></div>
+
+    <script>
+        // 현재 내 위치
+        const getCurrentPosition = ()=>{
+            navigator.geolocation.getCurrentPosition((position)=>{
+                let lat = position.coords.latitude
+                let lon = position.coords.longitude
+
+                getWeather(lat,lon)
+            })
+        }
+
+        // 날씨 구하기
+        const getWeather = (lat,lon)=>{
+            console.log(lat,lon)
+            $.ajax({
+                url : `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=d98ae2c3057b1f588501393dc077fc5f`,
+                type : 'get',
+                success : (res)=>{
+                    // 현재 온도, 최고 온도, 최저 온도
+                    // -273
+                    // console창에
+                    let temp = (res.main.temp - 273).toFixed(1)
+                    let temp_max = (res.main.temp_max - 273).toFixed(1)
+                    let temp_min = (res.main.temp_min - 273).toFixed(1)
+                    console.log(`현재 위치는 ${res.name}이고, 현재 온도는 ${temp} ℃ 입니다`)
+
+                    $('#weatherBox').text(`현재 위치는 ${res.name}이고, 현재 온도는 ${temp} ℃ 입니다`)
+                },
+                error : ()=>{
+                    alert('error~!')
+                }
+            })
+        }
+
+        // 버튼 클릭 시
+        $('#btnWeather').click(()=>{
+            getCurrentPosition()
+        })
+    </script>
+</body>
+</html>

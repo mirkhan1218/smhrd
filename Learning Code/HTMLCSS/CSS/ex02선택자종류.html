@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 1. 전체 선택자 => * 기호 사용 */
+        *{
+            color:green;
+        }
+
+        /* 2. 태그 선택자 => 태그이름 사용 */
+        li{
+            color:blue;
+        }
+
+        /* 선택자들을 구분해서 지정해줘야하는 경우
+            => 클래스 / 아이디
+
+            클래스 => 중복 가능
+            아이디 => 중복 불가능
+        */
+
+        /* 3. 클래스 선택자 => .클래스이름 */
+        .dinner{
+            color:black;
+        }
+
+        /* 4. 아이디 선택자 => #아이디이름 */
+        #maze{
+            color:red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>프론트 앤드</h1>
+    <P>사용자의 눈에 보이는 언어들!</P>
+    
+    <!-- ul>li*3 -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <h1 class="dinner">오늘 저녁 뭐먹지?</h1>
+    <p class="dinner">동명동에서 먹어야겠다!</p>
+    <ul class="dinner">
+        <li class="dinner" id="salmon">연어</li>
+        <li class="dinner" id="tuna">참치</li>
+        <li class="dinner" id="maze">마제소바</li>
+    </ul>
+</body>
+</html>

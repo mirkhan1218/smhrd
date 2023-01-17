@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            height: 10vh;
+
+            display: flex;
+        }
+        .item{
+            /* background-color: lightgray;
+            border: 1px solid black; */
+            width: 33%;
+            height: 100%;
+            flex-grow: 1;
+        }
+
+        #first-box{
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+
+        #sec-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        #sec-box>a{
+            margin: 30px;
+            padding: 20px;
+        }
+
+        #sec-box>a:hover{
+            background-color: black;
+            color: white;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        #thr-box{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            
+        }
+
+        #thr-box>a{
+            margin-right: 0.5em;
+            padding: 0.5em;
+        }
+        
+        #thr-box>a:active{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="first-box">스마트인재개발원</div>
+        <div class="item" id="sec-box">
+            <a href="#">Menu</a>
+            <a href="#">Best</a>
+            <a href="#">Event</a>
+        </div>
+        <div class="item" id="thr-box">
+            <a href="*">로그인</a>
+            <a href="../HTML/ex10회원가입.html">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>

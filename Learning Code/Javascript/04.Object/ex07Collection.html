@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ul>li*3-->
+
+    <ul>
+        <li>낙곱새</li>
+        <li>아이스아메리카노</li>
+        <li>초밥</li>
+    </ul>
+
+    <script>
+        // let list = document.getElementsByTagName('li')
+        let list = document.querySelectorAll('li')
+        // console.log(list[1].innerText)
+
+        // 결과창 (console)
+        // 낙곱새
+        // 아이스아메리카노
+        // 초밥
+        // for(let i = 0; i<list.length; i++){
+        //     console.log(list[i].innerText)
+        // }
+        list.forEach(item => {
+            console.log(item.innerText)            
+        });
+
+        // getElementsBy~ 의 단점 => querySelector 선택자로 칭해주자!
+        // 1) '유사' 배열 => 배열의 기능 X
+        // 2) 계층선택자 X
+    </script>
+</body>
+</html>

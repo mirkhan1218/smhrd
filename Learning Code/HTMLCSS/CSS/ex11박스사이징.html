@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 20px solid #dddddd;
+            width: 300px;
+            padding: 20px;
+        }
+
+        /* Box-sizing
+        :요소의 크기를 화면에 표시하는 방식
+        
+        (1) content-box
+        : 내가 설정한 크기 값을 content 영역의 크기로
+        : 그 이후로 붙인 padding, border, margin은
+          크기에 영향을 주지 않고, 계속 늘어나게 됨
+        (2) border-box
+        : 내가 설정한 크기 값을 border 영역의 크기로
+        : content + padding + border
+        : 이떄, margin은 포함 x
+
+        Q. 만약 내가 padding을 얼마나 주든
+            크기를 300px로 주고 싶다면?
+                => border-box
+
+        Q. 만약 내가 padding 값을 줄 때마다
+            크기가 커지길 원한다면?
+                => border-box
+        */
+
+        .bb{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="cb">
+        <p>content-box</p>
+    </div>
+
+    <div class="bb">
+        <p>border-box</p>
+    </div>
+</body>
+</html>

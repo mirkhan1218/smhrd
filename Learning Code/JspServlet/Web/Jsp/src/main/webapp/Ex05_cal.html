@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+숫자 2개 입력받아서 Ex05_cal.jsp로 데이터 전송
+form태그 : action, name, submit
+-->
+	<h1>계산기</h1>
+	<!-- Servlet으로 보낼 때는 해당 servlet의 url mapping값
+		 Jsp로 보낼 때는 해당 jsp의 경로 -->
+	<form action="./Ex05_cal.jsp">
+		Number 1 : <input type="text" name="num1"><br> <br>
+		Number 2 : <input type="text" name="num2"><br> <br>
+		<input type="submit" value="제출">
+	</form>
+</body>
+</html>
