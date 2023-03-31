@@ -1,5 +1,5 @@
-<details markdown="3">
-    <summary>test</summary>
+<details>
+    <summary>### - test</summary>
     
         #### - 1to25Game(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/AndroidStudioProjects/1to25Game)
         #### - Ex1004(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/AndroidStudioProjects/Ex1004)
