@@ -27,18 +27,18 @@
     </details>
 
     <details>
-    <summary>### 2. [Crawling](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Crawling)
+    <summary>### 2. [Crawling](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Crawling)</summary>
     
     
     
     </details>
 
     <details>
-    <summary>### 3. (DB)
+    <summary>### 3. (DB)</summary>
     </details>
 
     <details>
-    <summary>### 4. [HTMLCSS](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/HTMLCSS)
+    <summary>### 4. [HTMLCSS](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/HTMLCSS)</summary>
 
         #### - [CSS](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/HTMLCSS/CSS)
         #### - [HTML](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/HTMLCSS/HTML)
@@ -46,7 +46,7 @@
     </details>
 
     <details>
-    <summary>### 5. [JAVA](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA)
+    <summary>### 5. [JAVA](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA)</summary>
 
         #### - Ex220706(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA/Ex220706)
         #### - Ex220707(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA/Ex220707)
@@ -67,7 +67,7 @@
     </details>
 
     <details>
-    <summary>### 6. [JavaSsript](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript)
+    <summary>### 6. [JavaSsript](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript)</summary>
 
         #### - 01.basic(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript/01.basic)
         #### - 02.array(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript/02.array)
@@ -79,7 +79,7 @@
     </details>
 
     <details>
-    <summary>### 7. [JspServlet](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet)
+    <summary>### 7. [JspServlet](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet)</summary>
 
         #### - [Servlet](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Servlet)
 
@@ -101,16 +101,16 @@
     </details>
 
     <details>
-    <summary>### 8. [OpenCV](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/OpenCV)
+    <summary>### 8. [OpenCV](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/OpenCV)</summary>
 
 
 
     </details>
 
     <details>
-    <summary>### 9. [Python](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Python)
+    <summary>### 9. [Python](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Python)</summary>
 
         #### - [Python Library](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Python/Python%20Library)
         #### - [Python Study](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Python/Python%20Study)
-        
+
     </details>
