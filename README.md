@@ -7,7 +7,7 @@
     4. HTMLCSS
         - CSS
         - HTML
-    5. JAVA
+    5. *[JAVA](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA)
     6. JavaSsript
     7. JspServlet
     8. Python
