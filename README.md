@@ -1,6 +1,3 @@
-# SMHRD
-
-## - Learning Code
 <div markdown="3">
 
     <details>
