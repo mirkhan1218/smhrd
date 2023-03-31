@@ -1,7 +1,7 @@
 # SMHRD
 
 ## - Learning Code
-    <details>
+    <details markdown="3">
         <summary>1. [AndroidStudioProjects](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/AndroidStudioProjects)</summary>
         
             #### - 1to25Game(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/AndroidStudioProjects/1to25Game)
@@ -23,29 +23,26 @@
             #### - ex1102(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/AndroidStudioProjects/ex1102)
             #### - test(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/AndroidStudioProjects/test)
             #### - test_1109(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/AndroidStudioProjects/test_1109)
-    
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>2. [Crawling](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Crawling)</summary>
     
     
-    
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>3. (DB)</summary>
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>4. [HTMLCSS](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/HTMLCSS)</summary>
 
             #### - [CSS](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/HTMLCSS/CSS)
             #### - [HTML](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/HTMLCSS/HTML)
-    
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>5. [JAVA](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA)</summary>
 
             #### - Ex220706(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA/Ex220706)
@@ -63,10 +60,9 @@
             #### - JDBC(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA/JDBC)
             #### - JDBC2(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA/JDBC2)
             #### - javaFestival(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JAVA/javaFestival)
-
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>6. [JavaSsript](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript)</summary>
 
             #### - 01.basic(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript/01.basic)
@@ -75,15 +71,14 @@
             #### - 04.Object(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript/04.Object)
             #### - 05.jQuery(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript/05.jQuery)
             #### - 06.OPEN API(https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Javascript/06.OPEN%20API)
-
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>7. [JspServlet](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet)</summary>
 
-            - [Servlet](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Servlet)
+            #### - [Servlet](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Servlet)
 
-		<details>
+		<details markdown="4">
             <summary>- [WEB](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Web)</summary>
 
                 ##### - [APITest](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Web/APITest)
@@ -95,22 +90,18 @@
                 ##### - [MVC05](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Web/MVC05)
                 ##### - [MVC06](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Web/MVC06)
                 ##### - [Servers](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/JspServlet/Web/Servers)
-
         </details>
-
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>8. [OpenCV](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/OpenCV)</summary>
 
 
-
     </details>
 
-    <details>
+    <details markdown="3">
         <summary>9. [Python](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Python)</summary>
 
             #### - [Python Library](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Python/Python%20Library)
             #### - [Python Study](https://github.com/mirkhan1218/smhrd/tree/main/Learning%20Code/Python/Python%20Study)
-
     </details>
